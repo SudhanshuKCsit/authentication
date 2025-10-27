@@ -82,7 +82,10 @@ The token is not stored on the server; instead, it is sent back to the client.
 The client (e.g., the React app) then attaches this token to all future requests to access protected resources.
 Even though the server does not store this token, it can verify its authenticity using the same private key that was used during creation.
 If someone tries to forge a token with a different key, the server will detect it and deny access.
-This approach allows the server to remain stateless while still securely identifying and authorizing clients.# Authentication Tokens
+This approach allows the server to remain stateless while still securely identifying and authorizing clients.
+
+
+# Authentication Tokens
 Server creates (but does not store) a “permission” token and sends it to the client.  
 Client attaches this token to all future requests to protected resources.
 
